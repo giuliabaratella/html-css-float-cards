@@ -5,6 +5,11 @@
 }
 
 :root {
+    --color-h1-color: #e53170;
+	--color-email-color: #17ccf2;
+}
+
+body {
     font-family: 'Fredoka', sans-serif;
 }
 
@@ -17,4 +22,11 @@
 
 header h1 {
     font-size: 3em;
+    color: #e53170;
 }
+
+main p {
+    margin: 50px 0px;
+    font-size: 1.3em;
+}
+
