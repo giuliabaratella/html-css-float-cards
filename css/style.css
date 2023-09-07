@@ -7,6 +7,8 @@
 :root {
     --color-h1-color: #e53170;
 	--color-email-color: #17ccf2;
+    --color-team-member-background: black;
+    --color-team-member-text: white;
 }
 
 body {
@@ -16,17 +18,50 @@ body {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
     margin-top: 30px;
 }
 
 header h1 {
     font-size: 3em;
-    color: #e53170;
+    color: var(--color-h1-color);
+    text-align: center;
 }
 
 main p {
     margin: 50px 0px;
     font-size: 1.3em;
+    text-align: center;
+}
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: table;
 }
 
+
+.team-member {
+    width: calc(100% / 3);
+    background-color:var(--color-team-member-background);
+}
+.team-member img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.team-member-text {
+    margin-left: 20px;
+    float: left;
+}
+.team-member-name, .team-member-role {
+    color: var(--color-team-member-text);
+}
+.team-member-email {
+    color: var(--color-email-color);
+}
+.team-member-text > * {
+    margin-top: 8px;
+}
+/* .debug {
+    border: 2px solid orange;
+} */
